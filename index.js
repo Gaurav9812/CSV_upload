@@ -7,7 +7,9 @@ const expressLayouts=require('express-ejs-layouts');
 const db=require('./config/mongoose');
 let ejs = require('ejs');
 
+//to cvert form data
 app.use(express.urlencoded());
+
 
 app.use(expressLayouts);
 
@@ -19,9 +21,10 @@ app.set('layout extractScripts',true);
 app.set('view engine','ejs');
 app.set('views','./Views');
 
-    
+//path to static files    
 app.use(express.static('./Assets'));
 
+//to ROUTES
 app.use('/',require('./Routes/index'));
 
 app.listen(port,function(err)
