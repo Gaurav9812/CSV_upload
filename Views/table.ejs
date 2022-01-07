@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="/css/table.css">
+<div id="outer-div">
+    <!-- <input type="text" placeholder="Search" id="search-bar" onkeyup="sortRows()"> -->
+<p style="text-align: end;margin: 1rem;"><a href="/"><button style="width: 4rem;height: 2rem;">Home</button></a></p>
+    <h2 style="text-align: center;"><%=name%></h2>
+
+    <table border="2" class="table table-success table-striped">
+
+    <thead>
+        <% var keys=Object.keys(results[0])%>
+        
+    
+    <% for(let i=0;i<keys.length;i++){%>
+        <th ><%=keys[i]%></th>
+    
+
+    <%}%>
+    </thead>
+    <tbody>
+    <% for(let i=0;i<results.length;i++){%>
+        <tr>
+        <% for(let j=0;j<keys.length;j++){%>
+            <td><%=results[i][keys[j]]%></td>
+            
+            <%}%>
+        </tr>
+        <%}%>
+    </tbody>
+
+</table>
+</div>
+<script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="/js/table.js"></script>

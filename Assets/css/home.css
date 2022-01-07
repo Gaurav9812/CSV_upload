@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(#0099F7,#F11712);
+    height: 100vh;
+}
+h1{
+    letter-spacing: 2px;
+    text-align: center;
+    color: palevioletred;
+
+}
+button{
+    border: 2px solid;
+    padding: 0.2rem;
+    background: indianred;
+}
+
+form{
+    text-align: center;
+
+}
+#file{
+    background-color: aliceblue;
+    width: 40vw;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+#outer-div1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#outer-div2
+{
+    border: 2px solid black;
+    width: 50vw;
+    text-align: center;
+    padding: 1rem;
+}
+p{    
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}

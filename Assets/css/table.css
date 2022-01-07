@@ -1,0 +1,23 @@
+#nav
+{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+}
+
+button{
+    border-radius: 50%;
+    background: transparent;
+    border: 0px;
+}
+a
+{
+    margin-left: 2rem;
+    border-radius: 12px;
+    background: bisque;
+    padding: 0.3rem;
+}
+.active{
+    background-color: indianred;
+}
