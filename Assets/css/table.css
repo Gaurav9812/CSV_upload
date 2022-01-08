@@ -1,3 +1,6 @@
+body{
+    background-color: antiquewhite;
+}
 #nav
 {
     display: flex;
@@ -21,3 +24,10 @@ a
 .active{
     background-color: indianred;
 }
+th ,td{
+    padding:0px;
+}
+table.dataTable thead th, table.dataTable thead td{
+    padding:0px;
+}
+

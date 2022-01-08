@@ -1,22 +1,27 @@
     <link rel="stylesheet" href="/css/home.css">
     <h1>CSV Upload</h1>
-    
+
+    <!-- <%# for Form to Upload Csv File%>  -->
+
     <form enctype="multipart/form-data" method="post" action="/create" id="form1" >
         <input type="file" name="file" id="file"><br/>
         <button type="submit" id="Upload" >Upload File</button>
     </form>
 
+    <!-- <%#To display all the files u have uploaded%> -->
+    
     <div id="outer-div1">
         <div id="outer-div2">
             <h2>uploaded-files</h2>
             
+            <!-- <%#Iterating over all the files and dislaying them%> -->
             <%for(let i=0;i<Files.length;i++){%>
                 
                 <p class="uploaded-files">
                     <span>
                         <i class="fas fa-file-csv"></i>
-                    <a href="/View/?filePath=<%=Files[i].File%>"><%=Files[i].Name%></a></span>
-                    <a href="/delete/?filePath=<%=Files[i].File%>">
+                            <a href="/View/?filePath=<%=Files[i].File%>"><%=Files[i].Name%></a></span>
+                            <a href="/delete/?filePath=<%=Files[i].File%>">
                         <i class="fas fa-trash"> </i></a>
                 </p>
             <%}%>

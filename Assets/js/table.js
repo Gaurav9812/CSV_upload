@@ -1,5 +1,11 @@
+// when document is ready
+
 $(document).ready (function () {  
+    // Plug-in for sorting search and page 
     $('table').DataTable();
+    
+    //this is my logic for pages
+    
     // $('table').after ('<div id="nav"></div>');  
     // var rowsShown = 100;  
     // var rowsTotal = $('table tbody tr').length;  
@@ -22,6 +28,9 @@ $(document).ready (function () {
     //     css('display','table-row').animate({opacity:1}, 300);  
     // });  
 });  
+
+// logic for search
+
 // function sortRows()
 // {
     
@@ -55,9 +64,5 @@ $(document).ready (function () {
 //         }
 //     }
 //     }
-
-// }
-// function sortTables(n)
-// {
 
 // }

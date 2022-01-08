@@ -35,8 +35,15 @@ form{
 {
     border: 2px solid black;
     width: 50vw;
+    
     text-align: center;
     padding: 1rem;
+}
+#outer-div2 i{
+    color: aquamarine;
+}
+a{
+    color: aquamarine;
 }
 p{    
     font-size: 1.5rem;
@@ -44,4 +51,18 @@ p{
     display: flex;
     /* border: 2px solid red; */
     justify-content: space-around;
+}
+@media screen and (max-width:813px) {
+    #outer-div2{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:450px) {
+    
+    p{
+        font-size: 1.2rem;
+    }
+    #file{
+        width: 90vw;
+    }
 }

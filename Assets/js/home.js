@@ -6,12 +6,7 @@ document.getElementById('Upload').addEventListener('click',function(event){
         if(len.substring(len.length-3,len.length).toLowerCase()=='csv'){
             document.getElementsByTagName('form')[0].submit();
         }else{
-            alert('plz upload File')
+            alert('plz upload Csv File Only')
         }
     
 })
-// function submitForm(event){
-//     console.log("hello");
-//     event.preventDefault();
-//     console.log($('file').value());
-// }

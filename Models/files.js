@@ -18,7 +18,7 @@ const fileSchema=new mongoose.Schema({
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname,'../',AVATAR_PATH));
+        cb(null, path.join(__dirname,'../',PATH));
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now();
