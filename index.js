@@ -4,7 +4,7 @@ const port =process.env.PORT|| 8000;
 const app=express();
 
 const expressLayouts=require('express-ejs-layouts');
-const db=require('./config/mongoose');
+const db=require('./Config/mongoose');
 let ejs = require('ejs');
 
 //to read form data
