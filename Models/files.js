@@ -9,23 +9,14 @@ const fileSchema=new mongoose.Schema({
         type:String
     },
     File:{
-        type:String
+        type:Array
     }
     
 },{
     timestamps:true
 });
 
-
-let storage= multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, path.join(__dirname,'../',PATH));
-    },
-    filename: function (req, file, cb) {
-        const uniqueSuffix = Date.now();
-        cb(null, file.fieldname + '-' + uniqueSuffix+'.csv');
-    }
-});
+const storage = multer.memoryStorage();
 
 //Static methods
 fileSchema.statics.uploadedFiles=multer({storage:storage}).single('file');

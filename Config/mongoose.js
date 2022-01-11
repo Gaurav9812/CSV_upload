@@ -1,8 +1,7 @@
 const mongoose=require('mongoose');
+const id=require('./idPass');
 
-// mongoose.connect('mongodb://localhost/CSV_upload');
-mongoose.connect('mongodb+srv://mehra213:Zd6UGyhgNDvopnHl@cluster0.pooba.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
-
+mongoose.connect(`mongodb+srv://${id.id}:${id.password}@cluster0.pooba.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 const db=mongoose.connection;
 
 //if some error occured while connecting to database

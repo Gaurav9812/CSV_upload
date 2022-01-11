@@ -7,8 +7,8 @@ router.get('/',homeController.home);
 //to add csv file
 router.post('/create',homeController.create);
 //to view csv file
-router.get('/View',homeController.View);
+router.get('/View/:id',homeController.View);
 //to delete csv file
-router.get('/delete',homeController.delete);
+router.get('/delete/:id',homeController.delete);
 
 module.exports=router;

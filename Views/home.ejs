@@ -20,8 +20,8 @@
                 <p class="uploaded-files">
                     <span>
                         <i class="fas fa-file-csv"></i>
-                            <a href="/View/?filePath=<%=Files[i].File%>"><%=Files[i].Name%></a></span>
-                            <a href="/delete/?filePath=<%=Files[i].File%>">
+                            <a href="/View/<%=Files[i]._id%>"><%=Files[i].Name%></a></span>
+                            <a href="/delete/<%=Files[i]._id%>">
                         <i class="fas fa-trash"> </i></a>
                 </p>
             <%}%>
