@@ -16,7 +16,8 @@ const fileSchema=new mongoose.Schema({
     timestamps:true
 });
 
-const storage = multer.diskStorage({
+
+let storage= multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, path.join(__dirname,'../',PATH));
     },
