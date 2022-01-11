@@ -25,7 +25,7 @@ app.set('views','./Views');
 app.use(express.static('./Assets'));
 
 //to ROUTES
-app.use('/',require('./Routes/index'));
+app.use('/',require('./Routes/index.js'));
 
 app.listen(port,function(err)
 {
