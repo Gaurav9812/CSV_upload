@@ -6,7 +6,7 @@ const app=express();
 const expressLayouts=require('express-ejs-layouts');
 const db=require('./Config/mongoose');
 let ejs = require('ejs');
-
+const routes=require('./Routes/Index.js');
 //to read form data
 app.use(express.urlencoded());
 
@@ -25,7 +25,7 @@ app.set('views','./Views');
 app.use(express.static('./Assets'));
 
 //to ROUTES
-app.use('/',require('./Routes/index.js'));
+app.use('/',routes);
 
 app.listen(port,function(err)
 {
